@@ -1,0 +1,532 @@
+@charset "utf-8";
+/* This is My Custom CSS */
+/* 
+   Author: Company Name,
+   Author URL: Company URL,
+   
+   Site Name: Site Title,   
+   Site Description: Site Field,
+   Template: Responsive,
+   Framework: Bootstrap v4.0.0    
+*/
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #32383b;
+  /* word-break: break-all; */
+}
+
+/* HTML Elements */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+/* HTML Elements ends */
+
+/* Typography CSS starts */
+
+/* HKGrotesk-Regular- latin */
+@font-face {
+  font-family: "HKGrotesk-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HKGrotesk-Regular.woff") format("woff2"),
+    url("../fonts/HKGrotesk-Regular.ttf") format("woff"),
+    url("../fonts/HKGrotesk-Regular.ttf") format("truetype"),
+    url("../fonts/HKGrotesk-Regular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "HKGrotesk-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/HKGrotesk-Medium.woff") format("woff2"),
+    url("../fonts/HKGrotesk-Medium.ttf") format("woff"),
+    url("../fonts/HKGrotesk-Medium.ttf") format("truetype"),
+    url("../fonts/HKGrotesk-Medium.svg") format("svg");
+}
+@font-face {
+  font-family: "HKGrotesk-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/HKGrotesk-SemiBold.woff") format("woff2"),
+    url("../fonts/HKGrotesk-SemiBold.ttf") format("woff"),
+    url("../fonts/HKGrotesk-SemiBold.ttf") format("truetype"),
+    url("../fonts/HKGrotesk-SemiBold.svg") format("svg");
+}
+
+@font-face {
+  font-family: "HKGrotesk-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/HKGrotesk-Bold.woff") format("woff2"),
+    url("../fonts/HKGrotesk-Bold.ttf") format("woff"),
+    url("../fonts/HKGrotesk-Bold.ttf") format("truetype"),
+    url("../fonts/HKGrotesk-Bold.svg") format("svg");
+}
+
+@font-face {
+  font-family: "HKGrotesk-ExtraBold";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/HKGrotesk-ExtraBold.woff") format("woff2"),
+    url("../fonts/HKGrotesk-ExtraBold.ttf") format("woff"),
+    url("../fonts/HKGrotesk-ExtraBold.ttf") format("truetype"),
+    url("../fonts/HKGrotesk-ExtraBold.svg") format("svg");
+}
+
+@font-face {
+  font-family: "HKGrotesk-Black";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/HKGrotesk-Black.woff") format("woff2"),
+    url("../fonts/HKGrotesk-Black.ttf") format("woff"),
+    url("../fonts/HKGrotesk-Black.ttf") format("truetype"),
+    url("../fonts/HKGrotesk-Black.svg") format("svg");
+}
+
+/* Typography CSS ends */
+
+/* Global CSS */
+.clear {
+  clear: both;
+}
+.no-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+.no-paddingR {
+  padding-right: 0;
+}
+.no-paddingL {
+  padding-left: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+/* Some Padding Field Changes ( for below media queries written) */
+.change-padding {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.change-paddingR {
+  padding-right: 0px;
+}
+.change-paddingL {
+  padding-left: 0px;
+}
+.spl-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* Some Padding Field Changes ends */
+
+img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .change-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .change-paddingR {
+    padding-right: 15px;
+  }
+  .change-paddingL {
+    padding-left: 15px;
+  }
+  .spl-padding {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* Main Styles Starts */
+.main-btn {
+  font-family: "HKGrotesk-Bold";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 9px 20px;
+  color: #fff;
+  border: 1px solid #2b83ea;
+  border-radius: 2px;
+  display: inline-block;
+}
+.main-btn.white-btn {
+  background: #ffffff;
+  border-color: #fff;
+  color: #528ff0;
+}
+.white-btn img {
+  padding-left: 10.67px;
+}
+.blue-btn {
+  background: #2783f3;
+  color: #fff;
+}
+/* Main Styles Ends */
+
+/* Main Header Starts */
+.header-sec-outer {
+  background: transparent;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header-sec-outer .navbar {
+  padding: 16px 0;
+}
+.header-sec-outer .navbar-brand {
+  margin-right: 81px;
+  padding: 0 !important;
+  line-height: inherit !important;
+  font-size: inherit !important;
+}
+.header-sec-outer .navbar-nav li a {
+  font-family: "HKGrotesk-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 23px;
+  color: #fff;
+  padding: 0 17.5px !important;
+}
+
+.header-sec-outer .nav-right-btn .nav-link {
+  padding: 0;
+}
+.nav-right-btn ul {
+  display: flex;
+  display: -ms-flexbox;
+  align-items: center;
+  justify-content: center;
+}
+.nav-right-btn li {
+  display: inline-block;
+}
+.nav-right-btn li a {
+  text-decoration: none;
+}
+.header-sec-outer .border-btn {
+  margin-left: 24px;
+}
+.header-sec-outer .white-btn {
+  margin-left: 16px;
+}
+.sticky-sec {
+  background: #03062f;
+}
+/* Main Header End */
+
+/* Banner Starts */
+.product-sec-outer .container {
+  position: relative;
+}
+.product-sec-outer .row {
+  padding-top: 180px;
+}
+.banner-sec-outer {
+  background: #03062f;
+  position: relative;
+  height: 750px;
+}
+
+.banner-sec-outer .container .row {
+  padding-top: 135px;
+}
+.banner-sec-outer h1 {
+  font-family: "HKGrotesk-ExtraBold";
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 53px;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.banner-sec-left .divider {
+  width: 24px;
+  height: 4px;
+  background: #58c19c;
+}
+.banner-sec-outer p {
+  font-family: "HKGrotesk-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.banner-sec-left .main-btn {
+  padding: 12px 20px;
+}
+.custom-shape-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(109% + 1.3px);
+  height: 141px;
+}
+.custom-shape-divider-bottom .shape-fill {
+  fill: #ffffff;
+}
+/* Banner Ends */
+
+/* Product starts */
+/* Slider Starts */
+.product__slider-main .slick-slide {
+  margin-bottom: 28px;
+}
+.product__slider-main .slick-slide img {
+  margin: 0 auto;
+}
+.product__slider-main button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.product__slider-main .slick-prev.slick-arrow {
+  font-size: 0;
+  border: none;
+  background: url(../images/angle-left.svg) no-repeat center center #f4f6f6;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+.product__slider-main .slick-next.slick-arrow {
+  font-size: 0;
+  border: none;
+  background: url(../images/angle-right.svg) no-repeat center center #f4f6f6;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+.product__slider-thmb .slick-slide {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  margin: 0 6px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.product__slider-thmb .slick-arrow {
+  display: none !important;
+}
+.product__slider-thmb .slick-slide img {
+  height: 56px;
+  object-fit: cover;
+}
+/* Slider Ends */
+.product-details-right {
+  padding-left: 56px;
+}
+.product-details-right h3 {
+  font-family: "HKGrotesk-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 53px;
+  color: #222323;
+  margin-bottom: 8px;
+}
+.product-details-right p {
+  font-family: "HKGrotesk-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4f5659;
+  margin-bottom: 32px;
+}
+
+.color-sec h5,
+.quantity h5 {
+  font-family: "HKGrotesk-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #939c9f;
+  margin-bottom: 12px;
+}
+.color-sec ul {
+  margin: 0 -4px;
+}
+.color-sec ul li {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  padding: 0 4px;
+  margin-bottom: 8px;
+}
+.color-sec ul li a {
+  background: #ffffff;
+  border: 1px solid #d8e0e2;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  float: left;
+  min-height: 60px;
+}
+.color-heading {
+  font-family: "HKGrotesk-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  height: 17px;
+  color: #ffffff;
+}
+.color-heading.new-color {
+  background: #de742d;
+  border-radius: 6px 6px 0 0;
+}
+.color-heading.limited-release {
+  background: #a07edc;
+  border-radius: 6px 6px 0 0;
+}
+.color-model {
+  font-family: "HKGrotesk-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #545c5f;
+  padding: 7px 12px;
+  text-align: center;
+}
+
+.quantity-box .button-count.no-active {
+  background: #ccc;
+  border: 1px solid #ccc;
+  outline: none !important;
+  box-shadow: none !important;
+  width: 40px;
+  height: 48px;
+  color: #ffffff;
+}
+
+.quantity-box input {
+  width: 50px;
+  border-radius: 0 !important;
+  border: none;
+  text-align: center;
+}
+
+.quantity-box .button-count {
+  background: #03062f;
+  border: 1px solid #03062f;
+  outline: none !important;
+  box-shadow: none !important;
+  width: 40px;
+  height: 48px;
+  color: #ffffff;
+}
+.color-sec,
+.quantity {
+  display: inline-block;
+  width: 100%;
+}
+.buyonce-subscri ul li {
+  position: relative;
+  padding-left: 40px;
+}
+.buyonce-subscri ul li label p {
+  font-family: "HKGrotesk-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.buyonce-subscri ul li input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+.buyonce-subscri ul li label {
+  font-family: "HKGrotesk-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #202324;
+  display: block;
+  position: relative;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.buyonce-subscri ul li .check {
+  display: block;
+  position: absolute;
+  border: 3px solid #aaaaaa;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 5;
+  transition: border 0.25s linear;
+  -webkit-transition: border 0.25s linear;
+}
+/* .buyonce-subscri ul li:hover .check {
+  border: 5px solid #ffffff;
+} */
+.buyonce-subscri ul li .check::before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 2px;
+  left: 2px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+.buyonce-subscri input[type="radio"]:checked ~ .check {
+  border: 3px solid #00ba74;
+}
+.buyonce-subscri input[type="radio"]:checked ~ .check::before {
+  background: #00ba74;
+}
+
+.buyonce-subscri {
+  margin-top: 40px;
+}
+.product-sec-outer {
+  padding-bottom: 60px;
+}
+/* Product Ends */

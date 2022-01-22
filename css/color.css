@@ -1,0 +1,323 @@
+/**********
+ 1.common styles starts here 
+ **********/
+a{
+	color: #990000;
+	text-decoration: none;
+}
+a:hover,
+a:active{
+	color: #990000;
+	text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-item.active>.nav-link{
+	color: #990000;
+}
+.navbar-light .navbar-nav .nav-item:focus > .nav-link, 
+.navbar-light .navbar-nav .nav-item:hover > .nav-link,
+.dropdown-item:focus,
+ .dropdown-item:hover,
+ .nav-item.dropdown:hover > .dropdown-toggle_arrow,
+.nav-item.dropdown:focus > .dropdown-toggle_arrow{
+    color: #990000;
+}
+.spt_header_1 .navbar-dark .navbar-nav .nav-link {
+	color: #000;
+}
+.dropdown-submenu .dropdown-menu .nav-link:hover,
+.dropdown-submenu .dropdown-menu .nav-link:focus{
+	color:#990000;
+}
+.navbar-light .navbar-nav .dropdown-menu .nav-link:hover,
+.navbar-light .navbar-nav .dropdown-menu .nav-link:hover{
+	color: #990000;
+}
+.spt_header_fixed{
+	background-color: #fff;
+	}
+.btn{
+	background:#990000;
+	color: #fff;
+}
+.btn:focus{
+	box-shadow: none;
+}
+/**********
+ .common styles ends here 
+ **********/
+
+
+/**********
+ 2.spt_accordion_normal starts here 
+ **********/
+
+.spt_accordion .card-header .card-link:after {
+	background-color: rgba(221, 221, 221, 0.3);
+	border-radius: 100%;
+}
+
+.spt_accordion .card-header .card-link[aria-expanded="true"] {
+	background-color: rgba(221, 221, 221, 0.3);
+}
+
+.spt_accordion .card-header .card-link[aria-expanded="true"]::after {
+	background-color: #fff;
+}
+/**************
+ spt_accordion_normal ends here 
+ *********/
+
+
+/***************
+ 3.spt_accordion_default_open starts here 
+ ***************/
+
+.spt_accordion_default_open .card-header .card-link:after {
+	background-color: rgba(221, 221, 221, 0.3);
+	border-radius: 100%;
+}
+
+.spt_accordion_default_open .card-header .card-link[aria-expanded="true"] {
+	background-color: rgba(221, 221, 221, 0.3);
+}
+
+.spt_accordion_default_open .card-header .card-link[aria-expanded="true"]::after {
+	background-color: #fff;
+}
+/***************
+ spt_accordion_default_open ends here 
+ ***************/
+
+
+/***************
+ 4.spt_accordion_nested starts here 
+ ***************/
+
+.spt_accordion_nested .card-header .card-link:after {
+	background-color: rgba(221, 221, 221, 0.3);
+	border-radius: 100%;
+}
+
+.spt_accordion_nested .card-header .card-link[aria-expanded="true"] {
+	background-color: rgba(221, 221, 221, 0.3);
+}
+
+.spt_accordion_nested .card-header .card-link[aria-expanded="true"]::after {
+	background-color: #fff;
+}
+/***************
+ spt_accordion_nested ends here 
+ ***************/
+
+
+/***************
+ 5.spt_blog starts here 
+ ***************/
+
+.spt_header_1 .navbar-dark .navbar-nav .nav-link {
+	color: #000;
+}
+
+.spt_blog .pagination .page-item a.page-link {
+	color: #000;
+}
+
+.spt_blog .pagination .page-item.active a.page-link {
+	color: #fff;
+	background-color: #343a40;
+}
+
+.spt_blog .pagination .page-item a.page-link:focus,
+.spt_blog .pagination .page-item a.page-link:hover {
+	background-color: #fff;
+}
+
+.spt_blog .pagination .page-item.active a.page-link:hover {
+	color: #fff;
+	background-color: #343a40;
+}
+
+.spt_blog .pagination .page-item.disabled a {
+	color: #9aa09e;
+}
+
+.spt_blog .card {
+	background-color: #f5f5f5;
+}
+/***************
+ spt_blog ends here 
+ ***************/
+
+ /***************
+ 6.spt_breadcrumb starts here 
+ ***************/
+ .spt_breadcrumb ul.breadcrumb li+li:before {
+	 color: #000;
+ }
+ .spt_breadcrumb ul.breadcrumb li p{
+	color: #fff;
+ }
+
+ /***************
+ spt_breadcrumb ends here 
+ ***************/
+
+ /***************
+ 7.spt_contact_form starts here 
+ ***************/
+ .spt_contact_form .gray-light-bg {
+	background: #f6f6f6;
+	}
+	.spt_contact_form .form-control {
+		border-color: #ebebeb;
+	}	
+
+/***************
+spt_contact_form ends here 
+***************/
+
+.checkmark_checkbox{
+	background-color: #eee;
+}
+.custom_box:hover input ~ .checkmark_checkbox {
+	background-color: #ccc;
+  }
+
+  .custom_box input:checked ~ .checkmark_checkbox {
+	background-color: #990000;
+  }
+  .custom_radio input:checked ~ .checkmark {
+	background-color: #990000;
+  }
+  .custom_box .checkmark_checkbox:after{
+	border: solid white;
+  }
+  .checkmark{
+	background-color: #eee;
+  }
+  .custom_radio:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+
+
+ /***************
+ 8.spt_isotope starts here 
+ ***************/
+ .spt-isotope .btn:hover {
+	background: transparent;
+	color:	#990000;
+	border-color:#990000;
+	}
+	.spt-isotope .btn.active {
+		background:#343a40;
+		color: #fff;
+		border-color:#343a40;
+		}
+	 /***************
+ 8.spt_isotope ends here 
+ ***************/
+
+ 	 /***************
+ 9.spt_login_form starts here 
+ ***************/
+
+ .spt_login_form .form-control{
+	color: #6e707e;
+	border: 1px solid #d1d3e2;
+ }
+ .spt_login_form .btn:hover{
+	 border-color: #990000;
+	 background-color: #fff;
+ }
+ .spt_login_form .box-structure{
+	 background: #eee;
+ }
+
+ 	 /***************
+ 9.spt_login_form ends here 
+ ***************/
+ 
+  	 /***************
+ 10.spt_modal_popup_form starts here 
+ ***************/
+ .spt-modal .close:hover,
+ .spt-modal .close:focus {
+ color: #000;
+ }
+ .spt-modal .close {
+	color: #aaaaaa;
+ }
+ .spt-modal .modal-content {
+	background-color: #fefefe;
+	border: 1px solid #888;
+ }
+ .spt-modal{ 
+		background-color: rgba(0,0,0,0.4);
+ }
+   	 /***************
+ 10.spt_modal_popup_form ends here 
+ ***************/
+ 
+    	 /***************
+ 11.spt_sidenav starts here 
+ ***************/
+ .spt_sidenav a:hover {
+	color: #990000;
+	}
+	.spt_sidenav a {
+		color: #818181;
+	}
+	.nav-item.dropdown.show .nav-link{
+		color: #990000;
+	}
+	.spt_sidenav .dropdown-item.active, .dropdown-item:active {
+		color: #818181;
+		background-color: #fff;}
+		.spt_sidenav .dropdown-item:focus, .dropdown-item:hover {
+		color: #818181;
+		background-color: #fff;
+		}
+		.spt_sidenav{
+			background: #ddd;
+			background: #fff;
+		}
+    	 /***************
+ 11.spt_sidenav ends here 
+ ***************/
+
+     	 /***************
+ 12.spt_scroll-top ends here 
+ ***************/
+ .spt_scrolltop {
+    background-color: #909090;
+   }
+   .spt_scrolltop .fa{
+      color: #fff;
+   }
+
+       	 /***************
+ 12.spt_scroll-top ends here 
+ ***************/
+
+
+        	 /***************
+ 13.spt_testimonial ends here 
+ ***************/
+ .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #990000;
+}
+       	 /***************
+ 13.spt_sidenav ends here 
+ ***************/
+
+        	 /***************
+ 14.spt_parallax starts here 
+ ***************/
+ .spt_parallax .p-text{
+	color: #fff;
+	}
+        	 /***************
+ 14.spt_parallax ends here 
+ ***************/
+

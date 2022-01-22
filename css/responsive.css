@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* Mobile Menu Starts */
+  .header-sec-outer .navbar {
+    padding: 16px 15px;
+  }
+  #hamburguer-menu i {
+    color: #fff;
+  }
+  .mob-sec-slide {
+    position: fixed;
+    display: inline-block !important;
+    top: 0;
+    height: 100%;
+    background: #03062f;
+    width: 100%;
+    left: -100%;
+    overflow-y: scroll;
+    transition: 0.2s all ease-out;
+    padding: 16px 35px;
+  }
+  .slide-open {
+    left: 0;
+  }
+  .mob-sec-slide .navbar-collapse {
+    display: inline-block !important;
+    width: 100%;
+  }
+  .mob-sec-slide .navbar-brand {
+    margin-bottom: 30px;
+  }
+  .mob-sec-slide .nav-right-btn ul {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+    margin-bottom: 30px;
+  }
+  .mob-sec-slide .navbar-nav li {
+    margin-bottom: 25px;
+  }
+
+  .mob-sec-slide .navbar-nav li a {
+    padding-left: 0 !important;
+  }
+  .mob-sec-slide .main-btn {
+    padding: 9px 18px;
+  }
+  #menu-close i {
+    color: #fff;
+    font-size: 20px;
+  }
+  #menu-close {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  body.menu-open {
+    overflow-y: hidden;
+  }
+  /* Mobile Menu ends */
+
+  /* Banner Starts */
+  .banner-sec-outer h1 {
+    font-size: 30px;
+    line-height: 43px;
+  }
+  .custom-shape-divider-bottom {
+    display: none;
+  }
+  .banner-sec-right img {
+    height: 250px;
+  }
+  .banner-sec-outer .row {
+    display: -webkit-flex;
+    display: flex;
+    padding-top: 85px;
+  }
+  .banner-sec-left {
+    order: 2;
+  }
+  .banner-sec-right {
+    order: 1;
+    margin-bottom: 15px;
+  }
+  /* Banner Ends */
+  /* Product Stats */
+  .product-sec-outer .row {
+    padding-top: 50px;
+  }
+  .product-details-right {
+    padding-left: 15px;
+    margin-top: 35px;
+  }
+  /* Product Ends */
+}
+
+@media (min-width: 767px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+}
+
+/* Medium Device Size Starts  ----------- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Menu Starts */
+  #menu-close i {
+    color: #fff;
+    font-size: 20px;
+  }
+  #menu-close {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  body.menu-open {
+    overflow-y: hidden;
+  }
+  .mob-sec-slide {
+    position: fixed;
+    display: inline-block !important;
+    top: 0;
+    height: 100%;
+    background: #03062f;
+    width: 50%;
+    left: -100%;
+    overflow-y: scroll;
+    transition: 0.2s all ease-out;
+    padding: 16px 35px;
+    z-index: 9;
+  }
+  .slide-open {
+    left: 0;
+  }
+  .header-sec-outer .container {
+    display: -webkit-flex;
+    display: flex;
+  }
+  .header-sec-outer .container .navbar-brand {
+    order: 1;
+  }
+  .header-sec-outer .container .nav-right-btn {
+    order: 2;
+  }
+  .header-sec-outer .container #hamburguer-menu {
+    order: 3;
+  }
+  .header-sec-outer .container #hamburguer-menu {
+    color: #fff;
+  }
+  .mob-sec-slide .navbar-collapse {
+    display: inline-block !important;
+    width: 100%;
+  }
+  .mob-sec-slide .navbar-nav li {
+    margin-bottom: 25px;
+  }
+
+  .mob-sec-slide .navbar-nav li a {
+    padding-left: 0 !important;
+  }
+  .mob-sec-slide .navbar-brand {
+    margin-bottom: 30px;
+  }
+  .mob-overlay {
+    position: fixed;
+    display: inline-block !important;
+    top: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    right: -100%;
+    overflow-y: scroll;
+    transition: 0.5s all ease-out;
+    padding-bottom: 32px;
+    z-index: 1;
+  }
+  .mob-overlay.slow-overlay {
+    right: 0;
+  }
+  /* Menu Ends */
+  .banner-sec-left,
+  .banner-sec-right,
+  .product-slider-left,
+  .product-details-right {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+/* Medium Device Size Ends  ----------- */
+
+@media (min-width: 992px) {
+  #hamburguer-menu,
+  #menu-close,
+  .mob-overlay {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+}
+
+/* Desktops and Laptops Small Size Starts ----------- */
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+}
+/* Desktops and Laptops Small Size Ends ----------- */
+
+/* Desktops and Laptops Size Starts ----------- */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Desktops and Laptops Big Size Starts ----------- */
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1060px;
+    width: 100%;
+  }
+}
